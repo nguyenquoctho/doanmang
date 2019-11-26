@@ -1,0 +1,14 @@
+.carousel{
+    .carousel-item{
+        img{
+            height: 100vh;
+        }
+    }
+    @include respond-to('medium'){
+        .carousel-item{
+            img{
+                height: 400px;
+            }
+        }
+    }
+}

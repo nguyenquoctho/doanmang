@@ -1,0 +1,50 @@
+footer{
+    background: #00cdce;
+    color: white;
+    padding: 30px 5%;
+    width: 100%;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    p{
+        margin-top: 15px;
+        .vlth{
+            text-decoration: none;
+            color: red;
+            font-weight: normal;
+            transition: .5s;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    .footer__icon{
+        text-align: right;
+        a{
+            i{
+                color: white;
+                width: 35px;
+                height: 35px;
+                line-height: 33px;
+                border: 1px solid white;
+                margin: 10px;
+                text-align: center;
+                transition: all .5s;
+            }
+            .fa-facebook-f:hover, .fa-twitter:hover, .fa-vk:hover{
+                background: none;
+                color: #9ccdce;
+            }
+            .fa-wifi:hover{
+                background: none;
+                color: #a46c36;
+            }
+        }
+    }
+
+    @include respond-to('medium'){
+        .footer__icon{
+            text-align: left;
+        }
+    }
+}
